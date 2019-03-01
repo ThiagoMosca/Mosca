@@ -1,0 +1,7 @@
+<?php
+
+Print"Digite uma Temperatura em ºCelsius";
+$temperatura = (int)fgets(STDIN);
+
+$Fahrenheit = 9*$temperatura/5+32;
+Print" $Fahrenheit Graus Fahrenheit";
