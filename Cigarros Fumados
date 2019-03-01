@@ -1,0 +1,18 @@
+<?php
+
+  Print"Há quanto tempo tu Fumas?";
+   
+   $anos_fumados        = (int) fgets(STDIN);
+
+   Print " Quanto Cigarros Fumas Por dia? ";
+
+   $cigarros_fumados    = (int) fgets(STDIN);
+   
+   $minutos_perdidos    = $cigarros_fumados *10*365;
+  
+   $horas_perdidas      = $minutos_perdidos/60;
+  
+   $dias_perdidos       = $horas_perdidas/24;
+
+   
+   Print "tu perdeste $dias_perdidos dias de vida";
