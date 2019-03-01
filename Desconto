@@ -1,0 +1,10 @@
+<?php
+
+Print"Digite o preço";
+$Preço = (int) fgets(STDIN);
+Print " Digite a porcentagem de aumento desconto";
+$Desconto =(int) fgets (STDIN);
+
+$PreçoFinal = $Preço - ($Desconto*($Preço*0.01));
+
+Print "Seu Salario Final é $PreçoFinal";
