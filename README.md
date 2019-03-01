@@ -1,3 +1,4 @@
 # Mosca
 Programming school excercise
-For IFC-Araquari, Teacher JeffersonREADME.md
+For IFC-Araquari, Teacher Jefferson
+README.md
