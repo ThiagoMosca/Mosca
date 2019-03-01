@@ -1,0 +1,19 @@
+<?php
+
+Print"Digite Seu Salário";
+$Salario = (int) fgets(STDIN);
+Print " Digite a porcentagem de aumento salarial";
+$AumentoSalarial =(int) fgets (STDIN);
+
+$SalarioFinal = $Salario + ($AumentoSalarial*($Salario*0.01));
+
+Print "Seu Salario Final é $SalarioFinal";<?php
+
+Print"Digite Seu Salário";
+$Salario = (int) fgets(STDIN);
+Print " Digite a porcentagem de aumento salarial";
+$AumentoSalarial =(int) fgets (STDIN);
+
+$SalarioFinal = $Salario + ($AumentoSalarial*($Salario*0.01));
+
+Print "Seu Salario Final é $SalarioFinal";
