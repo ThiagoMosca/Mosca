@@ -1,0 +1,10 @@
+<?php
+
+print "Digite quantos metros você quer converter para milímetros: ";
+$metros = (int) fgets(STDIN);
+
+$milimetros = $metros*1000;
+
+print "Você tem $milimetros milímetros";
+
+centimetroscentimetros
