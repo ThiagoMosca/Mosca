@@ -1,0 +1,12 @@
+<?php 
+Print"Qual a distância a percorrer em Quilômetros?";
+
+$Distancia = (int) fgets(STDIN);
+
+Print" Qual a velocidade média esperada em KM/H";
+
+$VelocidadeMedia = (int) fgets(STDIN);
+
+$TempoMedio = $Distancia/$VelocidadeMedia;
+
+Print" A duração da viagem é mais ou menos $TempoMedio hora(s)  ";
