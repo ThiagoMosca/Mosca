@@ -1,0 +1,13 @@
+<?php 
+
+Print"Quantos Km você já percorreu neste veículo? ";
+
+$Quilometros = (int) fgets(STDIN);
+
+Print "E quantos dias? ";
+
+$Dias = (int) fgets (STDIN);
+
+$PreçoFinal = $Dias*60 + ($Quilometros*0.15);
+
+Print "É necessário $PreçoFinal\$ para pagar";
