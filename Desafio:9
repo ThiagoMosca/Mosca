@@ -1,0 +1,43 @@
+<?php 
+
+print "Digite o tamanho da área a ser pintada em m²: ";
+$metros = (int) fgets(STDIN);
+
+echo "Digite a forma de comprar o produto:
+       1 - Comprar apenas latas de 18Litros- 80.00$
+       2 - Comprar apenas galões de 3,6Litros- 25$
+       3 - Misturar os dois, com 10% de folga ";
+$escolha = (int) fgets(STDIN);
+
+if ($escolha == 1) {
+
+ $Litros_2 = ceil($metros / 6);
+ $latas = ceil($Litros_2 / 18);
+ $preco_total = round($latas * 80);
+
+ echo "Voce irá precisar de $latas latas, totalizando $Litros_2 litros , por R$ $preco_total.00";
+
+}
+
+
+if ($escolha == 2) {
+
+ $Litros_2 = ceil($metros / 6);
+ $galoes = ceil($Litros_2 / 3.6);
+ $preco_total_2 = round($galoes * 25);
+    
+ echo "Voce irá precisar de $galoes galões, com $Litros_2 Litros , custando R$ $preco_total_2.00 ";
+    
+}
+
+if ($escolha == 3){
+
+    $Litros_3 = $metros / 6;
+    $latas_2 = ceil($Litros_3/18);
+    $Litros_sobra = $latas_2 %18;
+    $galoes_totais = ceil($Litros_sobra /3.6);
+    $preco_total = ($latas_2 * 80) + ($galoes_totais * 25);
+
+    echo "Com $latas_2 latas e $galoes_totais galões, o custo será de $preco_total.";
+
+}
